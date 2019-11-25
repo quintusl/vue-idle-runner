@@ -13,4 +13,7 @@ declare module "vue/types/vue" {
   interface Vue {
     $idleQueue: (() => boolean)
   }
+  interface VueConstructor {
+    $idleQueue: (() => boolean)
+  }
 }
