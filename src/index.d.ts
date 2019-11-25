@@ -5,8 +5,8 @@ declare module 'vue-idle-runner' {
 }
 
 declare module 'vue-idle-runner/mixins' {
-  export const idle: any;
-  export const onLoadIdle: any;
+  export const idle: Vue;
+  export const onLoadIdle: Vue;
 }
 
 declare module "vue/types/vue" {
