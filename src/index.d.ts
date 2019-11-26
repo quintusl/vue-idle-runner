@@ -11,9 +11,9 @@ declare module 'vue-idle-runner/mixins' {
 
 declare module "vue/types/vue" {
   interface Vue {
-    $idleQueue: (() => boolean)
+    $idleQueue: object;
   }
   interface VueConstructor {
-    $idleQueue: (() => boolean)
+    $idleQueue: object;
   }
 }
