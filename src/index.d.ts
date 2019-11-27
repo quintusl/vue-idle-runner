@@ -10,10 +10,7 @@ declare module 'vue-idle-runner/mixins' {
 }
 
 declare module "vue/types/vue" {
-  interface Vue {
-    $idleQueue: function(() => void);
-  }
   interface VueConstructor {
-    $idleQueue: function(() => void);
+    $idleQueue: (cb: () => void) => boolean;
   }
 }
